@@ -1,3 +1,81 @@
-<!-- your html code here -->
-<!-- Also called a hero image or a jumbotron before bootstrap 5. This might be helpful: https://getbootstrap.com/docs/5.1/examples/jumbotron/ -->
-<p>Hello, I'm the tagline and I was loaded using ajax from templates/tagline.html</p>
+<style>
+    .hero-section {
+        position: relative;
+        width: 100%;
+        height: 400px;
+        background-image: url('https://wallpapers.com/images/featured/fondos-de-paisajes-naturales-k9tfch0hpfjbaxel.jpg');
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+    }
+
+    .hero-content {
+        background-color: rgba(255, 255, 255, 0.9);
+        padding: 40px 60px;
+        text-align: center;
+        border-radius: 8px;
+        box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+        max-width: 90%;
+    }
+
+    .hero-title {
+        font-family: 'Arial', sans-serif;
+        font-size: 4rem;
+        font-weight: 900;
+        color: #333;
+        margin-bottom: 20px;
+        line-height: 1.2;
+        text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
+    }
+
+    .hero-subtitle {
+        font-family: 'Arial', sans-serif;
+        font-size: 2.5rem;
+        font-weight: 600;
+        color: #555;
+        line-height: 1.3;
+    }
+
+    @media (max-width: 768px) {
+        .hero-section {
+            height: 300px;
+        }
+        
+        .hero-content {
+            padding: 30px 40px;
+        }
+        
+        .hero-title {
+            font-size: 2.5rem;
+        }
+        
+        .hero-subtitle {
+            font-size: 1.8rem;
+        }
+    }
+
+    @media (max-width: 480px) {
+        .hero-content {
+            padding: 20px 30px;
+        }
+        
+        .hero-title {
+            font-size: 2rem;
+        }
+        
+        .hero-subtitle {
+            font-size: 1.4rem;
+        }
+    }
+</style>
+
+<section class="hero-section">
+    <div class="hero-content">
+        <h1 class="hero-title">One Page Wonder</h1>
+        <h2 class="hero-subtitle">Will Knock Your Socks Off</h2>
+    </div>
+</section>
